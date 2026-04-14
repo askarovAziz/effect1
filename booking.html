@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking | Effect Spa Dubai</title>
+    <meta name="description" content="Book your treatment at Effect Spa Dubai. Share your preferred service, date, and time, and our team will confirm your appointment.">
+    <link rel="canonical" href="https://effectspa.ae/booking">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar" role="navigation" aria-label="Main navigation">
+            <div class="logo"><a href="/" aria-label="Effect Spa home"><img src="/img/effect-spa-logo.webp" alt="Effect Spa logo"></a></div>
+            <ul class="nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/contacts#locations">Locations</a></li>
+                <li><a href="/therapists">Therapists</a></li>
+                <li><a href="/gallery">Gallery</a></li>
+                <li><a href="/policy">Policy</a></li>
+                <li><a href="/blog">Blog</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="booking-section section-pad">
+            <div class="container booking-container">
+                <div class="booking-form-wrap">
+                    <h1>Book your visit</h1>
+                    <p>Share your preferred treatment and schedule. Our team will contact you to confirm availability.</p>
+                    <form class="booking-form" action="/contacts" method="get">
+                        <label for="booking-name">Full name</label>
+                        <input id="booking-name" name="name" type="text" autocomplete="name" required>
+
+                        <label for="booking-phone">Phone / WhatsApp</label>
+                        <input id="booking-phone" name="phone" type="tel" autocomplete="tel" required>
+
+                        <label for="booking-service">Preferred service</label>
+                        <select id="booking-service" name="service" required>
+                            <option value="">Choose a service</option>
+                            <option>Massage</option>
+                            <option>Hammam</option>
+                            <option>Jacuzzi</option>
+                            <option>Package</option>
+                        </select>
+
+                        <label for="booking-note">Notes</label>
+                        <textarea id="booking-note" name="note" rows="4" placeholder="Preferred date, time, therapist, or any special request"></textarea>
+
+                        <button class="hero-btn" type="submit">Continue to contact</button>
+                    </form>
+                    <a class="booking-faq-link" href="/faq">Read booking FAQ</a>
+                </div>
+
+                <aside class="booking-info-wrap" aria-label="Booking information">
+                    <article class="booking-info-card">
+                        <h2>Before you book</h2>
+                        <ul>
+                            <li>Appointments are subject to confirmation.</li>
+                            <li>Please provide your preferred time range.</li>
+                            <li>Late cancellations may affect future availability.</li>
+                            <li>Full details are available on our <a href="/policy">Policy</a> page.</li>
+                        </ul>
+                    </article>
+                </aside>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <a class="footer-logo-link" href="/" aria-label="Back to home"><img src="/img/effect-spa-logo.webp" alt="Effect Spa logo" class="footer-logo" loading="lazy"></a>
+                    <p>Your wellbeing is our passion. Discover the world of relaxation and beauty.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/contacts#locations">Locations</a></li>
+                        <li><a href="/therapists">Therapists</a></li>
+                        <li><a href="/gallery">Gallery</a></li>
+                        <li><a href="/blog">Blog</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Support</h3>
+                    <ul>
+                        <li><a href="/policy">Policy</a></li>
+                        <li><a href="/privacy">Privacy</a></li>
+                        <li><a href="/terms">Terms</a></li>
+                        <li><a href="/faq">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
