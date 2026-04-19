@@ -9,18 +9,52 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <nav class="navbar" role="navigation" aria-label="Main navigation">
-            <div class="logo"><a href="/" aria-label="Effect Spa home"><img src="/img/effect-spa-logo.webp" alt="Effect Spa logo"></a></div>
-            <ul class="nav-links">
-                <li><a href="/">Home</a></li>
-                <li><a href="/contacts#locations">Locations</a></li>
-                <li><a href="/therapists">Therapists</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/policy">Policy</a></li>
-                <li><a href="/blog">Blog</a></li>
-            </ul>
-        </nav>
+    <div id="top"></div>
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <a href="/" aria-label="Effect Spa &amp; Wellness">
+                    <img src="/img/effect-spa-logo.webp" alt="Effect Spa & Wellness" class="logo-img">
+                </a>
+            </div>
+            <nav class="nav" id="mainNav">
+                <a class="mobile-nav-brand" href="/" aria-label="Effect Spa &amp; Wellness">
+                    <img src="/img/effect-spa-logo.webp" alt="Effect Spa & Wellness" class="mobile-nav-logo">
+                </a>
+                <a class="mobile-whatsapp-btn" href="https://wa.me/971581071893" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+                <a href="/">Home</a>
+                <a href="/booking">Book</a>
+                <a href="/gallery">Gallery</a>
+                <div class="nav-dropdown">
+                    <button class="dropdown-toggle" type="button" aria-expanded="false">Service</button>
+                    <div class="dropdown-menu">
+                        <a href="/#classic-massage">Classic Massage</a>
+                        <a href="/#deep-tissue">Deep Tissue</a>
+                        <a href="/#couple-massage">Couple Massage</a>
+                        <a href="/#aroma-soul">Aroma Soul</a>
+                        <a href="/#four-hands-massage">Four Hands</a>
+                        <a href="/#swedish-massage">Swedish Massage</a>
+                        <a href="/#moroccan-hammam">Moroccan Hammam</a>
+                        <a href="/#jacuzzi">Jacuzzi</a>
+                    </div>
+                </div>
+                <a href="/contacts#locations">Locations</a>
+                <a href="/therapists">Therapists</a>
+                <a href="/about">About</a>
+                <a href="/contacts">Contact</a>
+                <a href="/blog">Blog</a>
+                <a href="/policy">Policy</a>
+                <a href="/privacy">Privacy</a>
+                <a href="/terms">Terms</a>
+                <a href="/disclaimer">Disclaimer</a>
+            </nav>
+            <div class="nav-overlay" id="navOverlay" aria-hidden="true"></div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Toggle navigation menu" aria-expanded="false">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
     </header>
 
     <main>
@@ -97,5 +131,6 @@
             </div>
         </div>
     </footer>
+    <script src="./script.js"></script>
 </body>
 </html>
